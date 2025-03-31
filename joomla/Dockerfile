@@ -14,9 +14,6 @@ ENV JOOMLA_DB_PASSWORD=${JOOMLA_DB_PASSWORD}
 ENV JOOMLA_DB_NAME=${JOOMLA_DB_NAME}
 ENV JOOMLA_DB_PORT=${JOOMLA_DB_PORT}
 
-# Copy local Joomla site files (if needed)
-COPY site_joomla /var/www/html
-
 # Set correct permissions
 RUN chown -R www-data:www-data /var/www/html
 
